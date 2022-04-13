@@ -10,6 +10,7 @@ async function googleVerify(token = '') {
 
     const { name, picture, email } = ticket.getPayload();
 
+
     return {
         nombre: name,
         img: picture,
