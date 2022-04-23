@@ -17,9 +17,9 @@ router.post('/login',[
 ],login );
 
 router.post('/google',[
-    check('id_token', 'El id_token de Google es obligatorio').not().isEmpty(),
+    check('id_token', 'ID Token de Google es obligatorio').not().isEmpty(),
     validarCampos
-], googleSignIn);
+],googleSignIn );
 
 
 
